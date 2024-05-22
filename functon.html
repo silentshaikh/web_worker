@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        function add(a,b){
+            console.log(this);
+            console.log(a+b);
+        }
+        add(5,5);
+       let wind =  function(){
+        console.log(this);
+       };
+       wind();
+       //using arrow function
+       let wind2 = (a,b) => {
+        // console.log(this.a+this.b)
+        console.log(this);
+       };
+       wind2(10,10);
+       let obj = {
+        name:"moiz",
+        sayName :() => {
+            let nme = obj.name;
+            console.log(this)
+        }
+       };
+       obj.sayName();
+       function name(){
+        console.log(this.name)
+       }
+      let obj2 = {
+        name:'BEn',
+      };
+      name.call(obj2);
+      function tpe(a,b){
+        console.log("dgr")
+      }
+      tpe(4,6)
+      console.log(tpe.length)
+      console.log(tpe.prototype);
+    </script>
+</body>
+</html>

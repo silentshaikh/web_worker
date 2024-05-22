@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        for(let i=1; i<=10; i++){
+            if(i==6){
+                break;
+            }else{
+                console.log(i)
+            }
+        };
+        let a = 1;
+        while(a<=10){
+            if(a>5){
+                break;
+            }else if(a===3){
+                a++;
+                continue;
+            }
+            else{
+                console.log(a)
+            }
+            a++;
+        }
+        let arr = [1,2,3,4,5,6,7,8,9];
+        for(let i=0; arr.length>2; i++){
+             arr.pop();
+        };
+        console.log(arr);
+        arr = [1,2,3,4,5,6,7,8,9];
+        while(arr.length>2){
+            arr.pop();
+        };
+        console.log(arr);
+        let checkPrime = true; 
+const isPrime = (convNumber) => { 
+    for(let i= 2; i < convNumber; i++) {
+        if(convNumber % i === 0) {
+            checkPrime = false;
+            break; 
+        }
+    }
+    if(checkPrime) {
+        console.log(`${convNumber} is a Prime Number`);
+    } else {
+        console.log(`${convNumber} is not a Prime Number`);
+    }
+}
+
+isPrime(11);
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        console.log(15/0);
+        console.log(-15/0)
+        console.log(Infinity/Infinity)
+        console.log(0/0);
+
+        // Bigint
+        let num = 11111111111111111111111111111111111111n;
+        let str = num.toString()
+        console.log(str.length)
+        document.write(num);
+        console.log(num);
+
+        //null
+        let name = null;
+        console.log(name);
+        function func(){
+            console.log('Hello')
+            
+        }
+        func()
+       let funcName =  func.name;
+        let funcCalr = func.caller;
+       console.log(funcName)
+       console.log(funcCalr)
+
+       //alert
+       console.log(typeof alert); // function
+        // let prom = prompt('ENter a Number');
+        // console.log(prom)
+        //confirm
+        // let conf = confirm('Are you sure to delte this item');
+        // if(conf===true){
+        //     console.log('Item was deleted')
+        // }else{
+        //     console.log('Item was not delete');
+        // }
+            let calc = '5'+6; 
+            console.log(typeof calc)
+            calc = '4'/'2';
+            console.log(typeof calc)
+            calc = '4'*'2';
+            console.log(typeof calc)
+            calc = '4'-'2';
+        console.log(typeof calc);
+        calc = undefined;
+        calc = Number(calc)
+        console.log(typeof calc)
+        calc = null;
+        calc = Number(calc)
+        console.log( calc)
+        calc = true;
+        calc = Number(calc)
+        console.log( calc)
+        calc = false;
+        calc = Number(calc);
+        console.log( calc);
+        calc = "";
+        calc = Number(calc);
+        console.log( calc);
+            //operator
+        let num1 = -5;
+        num1 = +num1;
+        console.log(num1);
+        // unary plus convert primitve type to number
+        let bool = true;
+        console.log(+bool);
+        bool = false;
+        console.log(+bool);
+
+    </script>
+</body>
+</html>
